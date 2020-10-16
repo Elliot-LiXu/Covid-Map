@@ -2,9 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import jsonData from './feiyan.json'
 import SearchCom from './searchCom.js'
+
 // import echarts from 'echarts'
 import './mapStyle.css'
 
+import App from './App';
+import Amplify from 'aws-amplify';
+import config from './aws-exports';
+// import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+
+Amplify.configure(config);
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <header>
+//         <h1>We now have Auth!</h1>
+//       </header>
+//       <AmplifySignOut />
+//     </div>
+//   );
+// }
 
 let provinceObj = {
 
@@ -52,15 +70,28 @@ provinceList.sort((a, b)=>{
 });
 // console.log(provinceList);
 
+// function App() {
+//   return (
+//     <div className="App">
+//       <header>
+//         <h1>We now have Auth!</h1>
+//       </header>
+//       <AmplifySignOut />
+//     </div>
+//   );
+// }
+
 class CovidChinaMap extends React.Component {
   // constructor(props) {
   //   super(props)
   // }
+
   render() {
     return (
       <div>
         <div id="title">
-        <h1>中国新冠疫情地图</h1>
+          <h1>中国新冠疫情地图</h1>
+          <App />
         </div>
         <div id="map"></div>
         <SearchCom provinceObj={provinceObj}></SearchCom>
