@@ -6,12 +6,11 @@ import SearchCom from './searchCom.js'
 // import echarts from 'echarts'
 import './mapStyle.css'
 
-import App from './App';
-import Amplify from 'aws-amplify';
-import config from './aws-exports';
-// import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+// import App from './App';
+// import Amplify from 'aws-amplify';
+// import config from './aws-exports';
 
-Amplify.configure(config);
+// Amplify.configure(config);
 
 // function App() {
 //   return (
@@ -89,7 +88,7 @@ class CovidChinaMap extends React.Component {
   render() {
     return (
       <div>
-        <App />
+        {/* <App /> */}
         <div id="title">
           <h1>中国新冠疫情地图</h1>
         </div>

@@ -10,11 +10,6 @@
       "StackName": "amplify-covidmap-dev-120816",
       "StackId": "arn:aws:cloudformation:us-west-2:348864593022:stack/amplify-covidmap-dev-120816/f378ae10-0fe2-11eb-822a-0210a367ba71",
       "AmplifyAppId": "d1wqm5o348ss75"
-    },
-    "categories": {
-      "auth": {
-        "covidmap6b269090": {}
-      }
     }
   }
 }
