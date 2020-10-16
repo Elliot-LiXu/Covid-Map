@@ -89,9 +89,9 @@ class CovidChinaMap extends React.Component {
   render() {
     return (
       <div>
+        <App />
         <div id="title">
           <h1>中国新冠疫情地图</h1>
-          <App />
         </div>
         <div id="map"></div>
         <SearchCom provinceObj={provinceObj}></SearchCom>
