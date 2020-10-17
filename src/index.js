@@ -6,22 +6,11 @@ import SearchCom from './searchCom.js'
 // import echarts from 'echarts'
 import './mapStyle.css'
 
-// import App from './App';
-// import Amplify from 'aws-amplify';
-// import config from './aws-exports';
+import App from './App';
+import Amplify from 'aws-amplify';
+import config from './aws-exports';
 
-// Amplify.configure(config);
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header>
-//         <h1>We now have Auth!</h1>
-//       </header>
-//       <AmplifySignOut />
-//     </div>
-//   );
-// }
+Amplify.configure(config);
 
 let provinceObj = {
 
@@ -69,17 +58,6 @@ provinceList.sort((a, b)=>{
 });
 // console.log(provinceList);
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header>
-//         <h1>We now have Auth!</h1>
-//       </header>
-//       <AmplifySignOut />
-//     </div>
-//   );
-// }
-
 class CovidChinaMap extends React.Component {
   // constructor(props) {
   //   super(props)
@@ -88,7 +66,7 @@ class CovidChinaMap extends React.Component {
   render() {
     return (
       <div>
-        {/* <App /> */}
+        <App />
         <div id="title">
           <h1>中国新冠疫情地图</h1>
         </div>
